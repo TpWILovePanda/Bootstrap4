@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>購物網站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- headers -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="finally.html">
+            <i class="fa fa-heart text-hexschool" aria-hidden="true"></i>
+            六角血拚拍賣
+        </a>
+
+        <form class="ml-auto">
+            <div class="input-group input-group-sm">
+                <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- 購物車內的數量 (Button 內包含 icon, 數量 badge) -->
+        <div class="dropdown ml-2">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+                <i class="fa fa-shopping-cart fa-2x text-dark" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <!-- 小心！ 讚嘆 Popper.js 下拉選單會自動定位 (包含在導覽列的狀況除外) -->
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="px-4 py-3" style="min-width: 300px" data-offset="400">
+                    <h6>已選擇商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </th>
+                                <td>金牌西裝</td>
+                                <td>1 件</td>
+                                <td>$520</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </th>
+                                <td>金牌女裝</td>
+                                <td>1 件</td>
+                                <td>$480</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a class="btn btn-primary btn-block" href="finally.1.html" role="button">
+                        <i class=" " aria-hidden="true"></i> 結帳去
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent pl-0">
+                <li class="breadcrumb-item">
+                    <a href="#">首頁</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">金牌專賣店</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">金牌西裝</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- 貼齊於頂端 (Sticky top) -->
+                <div class="sticky-top">
+                    <h1 class="h2">金牌西裝
+                        <small class="text-muted">(加拉哈德版)</small>
+                    </h1>
+                    <!-- 使用 justify-content-end 優點: 當沒有網路價, 售價會排於右邊 -->
+                    <div class="d-flex justify-content-end align-items-end">
+                        <del class="text-muted">售價 $1299</del>
+                        <div class="h3 ml-auto mb-0 text-danger">
+                            <small>網路價 NT$</small>
+                            <strong>520</strong>
+                        </div>
+                    </div>
+                    <hr> 尺寸:
+                    <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked>SM
+                        </label>
+                        <label class="btn btn-outline-secondary disabled">
+                            <input type="radio" name="options" id="option2" autocomplete="off" disabled>M
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options" id="option3" autocomplete="off">L
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options" id="option4" autocomplete="off">XL
+                        </label>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <select name="" id="" class="form-control mr-1">
+                            <option value="1">1 件</option>
+                            <option value="2">2 件</option>
+                            <option value="3">3 件</option>
+                            <option value="4">4 件</option>
+                        </select>
+                        <a href="#" class="btn btn-primary">加入購物車</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2>帥氣的西裝無人能敵</h2>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                    is a little bit longer.</p>
+                <h3 class="mt-5 text-center">合身剪裁</h3>
+                <img src="https://images.unsplash.com/photo-1472417583565-62e7bdeda490?w=634" class="w-100" alt="">
+
+                <h3 class="mt-5 text-center">簡單就好</h3>
+                <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1500" class="w-100" alt="">
+
+                <h3 class="mt-5 text-center">不佔空間</h3>
+                <img src="https://images.unsplash.com/photo-1475530060488-75a6de1dca6f?w=675" class="w-100" alt="">
+
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">購物說明</h1>
+                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-light py-5 text-secondary">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 六角學院</li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-hexschool">
+                        <i class="fa fa-instagram" aria-hidden="true">
+                            Instagram</i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-hexschool">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-hexschool">About</a>
+                </li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

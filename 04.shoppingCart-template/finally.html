@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>購物網站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- headers -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="finally.html">
+            <i class="fa fa-heart text-hexschool" aria-hidden="true"></i>
+            六角血拚拍賣
+        </a>
+
+        <form class="ml-auto">
+            <div class="input-group input-group-sm">
+                <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- 購物車內的數量 (Button 內包含 icon, 數量 badge) -->
+        <div class="dropdown ml-2">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+                <i class="fa fa-shopping-cart fa-2x text-dark" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <!-- 小心！ 讚嘆 Popper.js 下拉選單會自動定位 (包含在導覽列的狀況除外) -->
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="px-4 py-3" style="min-width: 300px" data-offset="400">
+                    <h6>已選擇商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </th>
+                                <td>金牌西裝</td>
+                                <td>1 件</td>
+                                <td>$520</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </th>
+                                <td>金牌女裝</td>
+                                <td>1 件</td>
+                                <td>$480</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a class="btn btn-primary btn-block" href="finally.1.html" role="button">
+                        <i class=" " aria-hidden="true"></i> 結帳去
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 廣告大屏幕 (Jumbotron) -->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        <div class="container">
+            <div class="bg-lighter p-4">
+                <h1 class="display-4">買到剁手手！最後出清</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- 列表群組 (List group) + Position 位置 -->
+                <div class="list-group sticky-top" id="myList" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">
+                        <i class="fa fa-caret-square-o-up" aria-hidden="true"></i>
+                        Cras justo odio
+                    </a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">
+                        <i class="fa fa-umbrella" aria-hidden="true"></i>
+                        Dapibus ac facilisis in
+                    </a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" data-toggle="list">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        Morbi leo risus
+                    </a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" data-toggle="list">
+                        <i class="fa fa-tint" aria-hidden="true"></i>
+                        Porta ac consectetur ac
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home" role="tabpanel">
+                        <h2>Cras justo odio</h2>
+                        <!-- 卡片 (Card) -->
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1350&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="" class="btn btn-outline-secondary">SM</a>
+                                            <a href="" class="btn btn-outline-secondary disabled">M</a>
+                                            <a href="" class="btn btn-outline-secondary">L</a>
+                                            <a href="" class="btn btn-outline-secondary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?auto=format&fit=crop&w=800&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between">
+                                        <a href="" class="btn btn-outline-secondary btn-block">快速購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1495100497150-fe209c585f50?auto=format&fit=crop&w=1351&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This card has even longer content than the first to show that equal
+                                            height action.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1498661705887-3778d9ecb4ff?auto=format&fit=crop&w=1350&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi corrupti autem
+                                            repudiandae libero non, asperiores praesentium. Molestiae error ex eos nisi aliquid,
+                                            suscipit deleniti laboriosam dolorum soluta at modi.</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1478145189398-ec6f9e328b76?auto=format&fit=crop&w=634&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptatibus praesentium
+                                            aliquid nobis soluta corrupti blanditiis et!</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1471102204080-fe99e6db4ef0?auto=format&fit=crop&w=1353&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum, adipisicing elit. Molestiae eaque, vero qui libero consequatur dolor
+                                            odio animi expedita illo autem cum tenetur architecto ad eum esse quasi nobis
+                                            odit maiores!</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="profile" role="tabpanel">
+                        <h2>Dapibus ac facilisis in</h2>
+                        <!-- 卡片 (Card) -->
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1350&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="" class="btn btn-outline-secondary">SM</a>
+                                            <a href="" class="btn btn-outline-secondary disabled">M</a>
+                                            <a href="" class="btn btn-outline-secondary">L</a>
+                                            <a href="" class="btn btn-outline-secondary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1495100497150-fe209c585f50?auto=format&fit=crop&w=1351&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This card has even longer content than the first to show that equal
+                                            height action.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?auto=format&fit=crop&w=800&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between">
+                                        <a href="" class="btn btn-outline-secondary btn-block">快速購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1478145189398-ec6f9e328b76?auto=format&fit=crop&w=634&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptatibus praesentium
+                                            aliquid nobis soluta corrupti blanditiis et!</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1471102204080-fe99e6db4ef0?auto=format&fit=crop&w=1353&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum, adipisicing elit. Molestiae eaque, vero qui libero consequatur dolor
+                                            odio animi expedita illo autem cum tenetur architecto ad eum esse quasi nobis
+                                            odit maiores!</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1498661705887-3778d9ecb4ff?auto=format&fit=crop&w=1350&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi corrupti autem
+                                            repudiandae libero non, asperiores praesentium. Molestiae error ex eos nisi aliquid,
+                                            suscipit deleniti laboriosam dolorum soluta at modi.</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="messages" role="tabpanel">
+                        <h2>Morbi leo risus</h2>
+                        <!-- 卡片 (Card) -->
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?auto=format&fit=crop&w=800&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between">
+                                        <a href="" class="btn btn-outline-secondary btn-block">快速購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1495100497150-fe209c585f50?auto=format&fit=crop&w=1351&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This card has even longer content than the first to show that equal
+                                            height action.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1498661705887-3778d9ecb4ff?auto=format&fit=crop&w=1350&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi corrupti autem
+                                            repudiandae libero non, asperiores praesentium. Molestiae error ex eos nisi aliquid,
+                                            suscipit deleniti laboriosam dolorum soluta at modi.</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1471102204080-fe99e6db4ef0?auto=format&fit=crop&w=1353&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum, adipisicing elit. Molestiae eaque, vero qui libero consequatur dolor
+                                            odio animi expedita illo autem cum tenetur architecto ad eum esse quasi nobis
+                                            odit maiores!</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1350&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="" class="btn btn-outline-secondary">SM</a>
+                                            <a href="" class="btn btn-outline-secondary disabled">M</a>
+                                            <a href="" class="btn btn-outline-secondary">L</a>
+                                            <a href="" class="btn btn-outline-secondary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1478145189398-ec6f9e328b76?auto=format&fit=crop&w=634&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptatibus praesentium
+                                            aliquid nobis soluta corrupti blanditiis et!</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="settings" role="tabpanel">
+                        <h2>Porta ac consectetur ac</h2>
+                        <!-- 卡片 (Card) -->
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1498661705887-3778d9ecb4ff?auto=format&fit=crop&w=1350&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi corrupti autem
+                                            repudiandae libero non, asperiores praesentium. Molestiae error ex eos nisi aliquid,
+                                            suscipit deleniti laboriosam dolorum soluta at modi.</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1478145189398-ec6f9e328b76?auto=format&fit=crop&w=634&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptatibus praesentium
+                                            aliquid nobis soluta corrupti blanditiis et!</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1471102204080-fe99e6db4ef0?auto=format&fit=crop&w=1353&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem ipsum, adipisicing elit. Molestiae eaque, vero qui libero consequatur dolor
+                                            odio animi expedita illo autem cum tenetur architecto ad eum esse quasi nobis
+                                            odit maiores!</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 border-0 box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1350&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="" class="btn btn-outline-secondary">SM</a>
+                                            <a href="" class="btn btn-outline-secondary disabled">M</a>
+                                            <a href="" class="btn btn-outline-secondary">L</a>
+                                            <a href="" class="btn btn-outline-secondary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?auto=format&fit=crop&w=800&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between">
+                                        <a href="" class="btn btn-outline-secondary btn-block">快速購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1495100497150-fe209c585f50?auto=format&fit=crop&w=1351&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This card has even longer content than the first to show that equal
+                                            height action.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-light py-5 text-secondary">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 六角學院</li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-hexschool">
+                        <i class="fa fa-instagram" aria-hidden="true">
+                            Instagram</i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-hexschool">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-hexschool">About</a>
+                </li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
