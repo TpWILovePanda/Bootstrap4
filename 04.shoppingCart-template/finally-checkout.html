@@ -75,76 +75,73 @@
         </div>
     </nav>
 
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bg-transparent pl-0">
-                <li class="breadcrumb-item">
-                    <a href="#">首頁</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a href="#">金牌專賣店</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">金牌西裝</li>
-            </ol>
-        </nav>
-        <div class="row">
-            <div class="col-md-4">
-                <!-- 貼齊於頂端 (Sticky top) -->
-                <div class="sticky-top">
-                    <h1 class="h2">金牌西裝
-                        <small class="text-muted">(加拉哈德版)</small>
-                    </h1>
-                    <!-- 使用 justify-content-end 優點: 當沒有網路價, 售價會排於右邊 -->
-                    <div class="d-flex justify-content-end align-items-end">
-                        <del class="text-muted">售價 $1299</del>
-                        <div class="h3 ml-auto mb-0 text-danger">
-                            <small>網路價 NT$</small>
-                            <strong>520</strong>
-                        </div>
-                    </div>
-                    <hr> 尺寸:
-                    <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary active">
-                            <input type="radio" name="options" id="option1" autocomplete="off" checked>SM
-                        </label>
-                        <label class="btn btn-outline-secondary disabled">
-                            <input type="radio" name="options" id="option2" autocomplete="off" disabled>M
-                        </label>
-                        <label class="btn btn-outline-secondary">
-                            <input type="radio" name="options" id="option3" autocomplete="off">L
-                        </label>
-                        <label class="btn btn-outline-secondary">
-                            <input type="radio" name="options" id="option4" autocomplete="off">XL
-                        </label>
-                    </div>
-
-                    <div class="input-group mt-3">
-                        <select name="" id="" class="form-control mr-1">
-                            <option value="1">1 件</option>
-                            <option value="2">2 件</option>
-                            <option value="3">3 件</option>
-                            <option value="4">4 件</option>
-                        </select>
-                        <a href="#" class="btn btn-primary">加入購物車</a>
-                    </div>
+    <div class="container main-content py-5">
+        <h1 class="text-secondary text-center mb-3">六角血拚 結帳去</h1>
+        <div class="form-row text-center">
+            <div class="col-12 col-sm">
+                <div class="alert alert-success alert-rounded" role="alert">
+                    1.輸入訂單資料
                 </div>
             </div>
+            <div class="col-12 col-sm">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    2.金流付款
+                </div>
+            </div>
+            <div class="col-12 col-sm">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    3.完成
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
             <div class="col-md-8">
-                <h2>帥氣的西裝無人能敵</h2>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                    is a little bit longer.</p>
-                <h3 class="mt-5 text-center">合身剪裁</h3>
-                <img src="https://images.unsplash.com/photo-1472417583565-62e7bdeda490?w=634" class="w-100" alt="">
-
-                <h3 class="mt-5 text-center">簡單就好</h3>
-                <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1500" class="w-100" alt="">
-
-                <h3 class="mt-5 text-center">不佔空間</h3>
-                <img src="https://images.unsplash.com/photo-1475530060488-75a6de1dca6f?w=675" class="w-100" alt="">
-
-                <div class="alert alert-secondary mt-4">
-                    <h2 class="text-center">購物說明</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                <!-- 折疊 (Collapse) -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+                            顯示購物車細節
+                        </a>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th width="30"></th>
+                                <th width="100"></th>
+                                <th>商品名稱</th>
+                                <th width="100">數量</th>
+                                <th width="80">小計</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="align-middle" scope="row">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </th>
+                                <td class="align-middle">
+                                    <img src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350" class="img-fluid img-thumbnail" alt="">
+                                </td>
+                                <td class="align-middle">金牌西裝</td>
+                                <td class="align-middle">1 件</td>
+                                <td class="align-middle">$520</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </th>
+                                <td class="align-middle" class="align-middle">
+                                    <img src="https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=1350&q=80" class="img-fluid img-thumbnail"
+                                        alt="">
+                                </td>
+                                <td class="align-middle">金牌女裝</td>
+                                <td class="align-middle">1 件</td>
+                                <td class="align-middle">$480</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
