@@ -1,0 +1,118 @@
+$navbar-fix-left-width: 17rem;
+$color-coffee: #653f2a;
+// ---
+@media (min-width: 820px) {
+  .w-md-50 {
+    width: 50%;
+  }
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-gray {
+  background-color: rgba(128, 128, 128, .6);
+}
+
+.bg-coffee {
+  background-color: $color-coffee;
+}
+
+// ---
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+// ---
+.navbar-fix-left .nav-item {
+  a {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0;
+      border-bottom: 1px solid transparent;
+      transition: .2s ease-in-out;
+    }
+  }
+  &:hover a::before, &.active a::before {
+    width: 100%;
+    border-bottom: 1px solid #f7ec77;
+    transition: .2s ease-in-out;
+  }
+}
+
+.modal-top {
+  max-width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1513530176992-0cf39c4cbed4?auto=format&fit=crop&w=1350&q=80)
+}
+
+.card {
+  background-color: lighten($color: $color-coffee, $amount: 10);
+}
+
+@media (min-width: 820px) {
+  .navbar-fix-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: $navbar-fix-left-width;
+    height: 100vh;
+    z-index: 1;
+    .coffee-icon {
+      position: absolute;
+      top: 45px;
+      right: -35px;
+      width: 4rem;
+      height: 4rem;
+      line-height: 4.5rem;
+      border-radius: 50%;
+      box-shadow: 0 0 1px 1px #c0c0c0;
+      background-color: white;
+      color: #855b13;
+    }
+    .navbar-collapse {
+      width: 100%;
+      flex-grow: 0;
+      align-items: flex-start;
+      .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+  .has-left-navpanel {
+    padding-left: $navbar-fix-left-width;
+    .modal-top {
+      height: 60vh;
+    }
+    .modal-bottom {
+      height: 40vh;
+    }
+    .card-body {
+      display: flex;
+      .card-title {
+        margin-left: 0;
+        writing-mode: vertical-rl;
+        letter-spacing: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 819px) {
+  .modal-top {
+    height: 40vh;
+  }
+  .coffee-icon {
+    color: white;
+  }
+}
