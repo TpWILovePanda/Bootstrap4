@@ -1,6 +1,6 @@
 # Bootstrap & Sass
 
-使用內建的 Sass 變數客製化 Bootstrap 4，套用全域的樣式風格及主題、元件的調整。
+[Coffee-Template](./public/index.html) 使用內建的 Sass 變數客製化 Bootstrap 4，套用全域的樣式風格及主題、元件的調整。
 
 ## Installation process 安裝流程
 
