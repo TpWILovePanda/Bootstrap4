@@ -11,5 +11,5 @@
     1. [x] [結帳清單](https://tpwilovepanda.github.io/Bootstrap4-Template/04.shoppingCart-template/finally-checkout.html)
     1. [x] [結帳完成](https://tpwilovepanda.github.io/Bootstrap4-Template/04.shoppingCart-template/finally-checkoutCompleted.html)
 1. [x] [咖啡烘焙介紹版型](https://codepen.io/LovePanda/full/ppYjOO/)
-1. [x] [APP 形象首頁版型](https://tpwilovepanda.github.io/Bootstrap4-Template/06.app-template/public/app.html)
-1. [ ] [Conference 形象首頁版型]()
+1. [x] [APP 形象首頁版型](https://tpwilovepanda.github.io/Bootstrap4-Template/06.aquamarine-template/public/app.html)
+1. [x] [Conference 形象首頁版型](https://tpwilovepanda.github.io/Bootstrap4-Template/06.aquamarine-template/public/conference.html)
